@@ -36,7 +36,7 @@ export class UseForm {
     render() {
         const formElement = document.createElement('form');
         const submitBtn = document.createElement('button');
-        formElement.setAttribute('class', 'gap-3 p-5 d-flex flex-column');
+        formElement.setAttribute('class', 'gap-3 px-5 d-flex flex-column col-12 col-sm-10 col-md-8 col-lg-6 col-xl-4');
         submitBtn.setAttribute('type', 'submit');
         submitBtn.setAttribute('class', 'btn btn-primary w-100');
         submitBtn.textContent = 'Save';
