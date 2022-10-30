@@ -12,6 +12,13 @@ const formFields = [
         placeholder: 'Enter login',
     },
     {
+        type: 'password',
+        name: 'userPassword',
+        label: 'Password',
+        defaultValue: '',
+        placeholder: 'Enter password',
+    },
+    {
         type: 'select',
         name: 'userCountry',
         label: 'Country',

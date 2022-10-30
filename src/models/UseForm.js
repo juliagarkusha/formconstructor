@@ -1,4 +1,5 @@
 import { Text } from "./fields/Text";
+import { Password } from "./fields/Password";
 import { Select } from "./fields/Select";
 import { Checkbox } from "./fields/Checkbox";
 
@@ -9,6 +10,9 @@ export class UseForm {
         formFields.forEach(field => {
             if(field.type === 'text') {
                 this.fields.push(new Text(field));
+            }
+            if(field.type === 'password') {
+                this.fields.push(new Password(field));
             }
             if(field.type === 'select') {
                 this.fields.push(new Select(field));
